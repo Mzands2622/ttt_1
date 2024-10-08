@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe Version #1</title>
+    <style type="text/css">
+      body,
+      html {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+      }
+
+      .square {
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        border: 1px, solid black;
+        text-align: center;
+      }
+
+      #full_board {
+        display: flex;
+        justify-content: center;
+      }
+
+      .first_column,
+      .second_column,
+      .third_column,
+      .fourth_column {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .piece {
+        font-size: 32px;
+      }
+
+      .square:hover {
+        background-color: rgb(234, 255, 0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="full_board">
+      <div class="first_column">
+        <div id="first_column_top" class="square">
+          <p class="piece">X</p>
+        </div>
+        <div id="first_column_middle" class="square"></div>
+        <div id="first_column_bottom" class="square"></div>
+      </div>
+
+      <div class="second_column">
+        <div id="second_column_top" class="square"></div>
+        <div id="second_column_middle" class="square">
+          <p class="piece">X</p>
+        </div>
+        <div id="second_column_bottom" class="square"></div>
+      </div>
+
+      <div class="third_column">
+        <div id="third_column_top" class="square"></div>
+        <div id="third_column_middle" class="square"></div>
+        <div id="third_column_bottom" class="square">
+          <p class="piece">O</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
